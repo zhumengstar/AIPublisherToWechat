@@ -58,5 +58,5 @@ export const getTitleUserPrompt = ({
   content,
   language = "中文"
 }: SummarizerPromptParams): string => {
-  return `请为以下内容生成一个专业的标题，字数不超过30个字，使用${language}：\n\n${content}\n\n`;
+  return `请为以下内容生成一个专业的标题，字数不超过50个字，使用${language}：\n\n${content}\n\n`;
 }; 
