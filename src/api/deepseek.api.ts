@@ -45,9 +45,9 @@ interface ChatCompletionResponse {
 }
 
 export class DeepseekAPI {
-  private baseURL = "https://api.deepseek.com";
+  private baseURL = "https://openrouter.ai/api";
   private token!: string;
-  private defaultModel = "deepseek-chat";
+  private defaultModel = "deepseek/deepseek-r1:free";
 
   constructor() {
     this.refresh();
