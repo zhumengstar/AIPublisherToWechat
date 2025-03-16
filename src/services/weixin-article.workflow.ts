@@ -242,7 +242,7 @@ export class WeixinWorkflow {
         allContents.map((content) => content.title).join(" | ")
       ).then((title) => {
         // 限制标题长度 为 64 个字符
-        return title.slice(0, 20);
+        return title.slice(0, 64);
       });
 
       console.log(`[标题生成] 生成标题: ${summaryTitle}`);
