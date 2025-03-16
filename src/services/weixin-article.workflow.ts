@@ -107,11 +107,11 @@ export class WeixinWorkflow {
 
       // 检查 API 额度
       // deepseek
-      const deepSeekBalance = await this.deepSeekClient.getCNYBalance();
-      console.log("DeepSeek余额：", deepSeekBalance);
-      if (deepSeekBalance < 1.0) {
-        this.notifier.warning("DeepSeek", "余额小于一元");
-      }
+      // const deepSeekBalance = await this.deepSeekClient.getCNYBalance();
+      // console.log("DeepSeek余额：", deepSeekBalance);
+      // if (deepSeekBalance < 1.0) {
+      //   this.notifier.warning("DeepSeek", "余额小于一元");
+      // }
       // 1. 获取数据源
       const sourceConfigs = await getCronSources();
 
